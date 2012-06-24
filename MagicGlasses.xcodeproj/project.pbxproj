@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1E450C51597114100E0C5BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450C41597114100E0C5BE /* UIKit.framework */; };
+		B1E450C71597114100E0C5BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450C61597114100E0C5BE /* Foundation.framework */; };
+		B1E450C91597114100E0C5BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450C81597114100E0C5BE /* CoreGraphics.framework */; };
+		B1E450CB1597114100E0C5BE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450CA1597114100E0C5BE /* GLKit.framework */; };
+		B1E450CD1597114100E0C5BE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450CC1597114100E0C5BE /* OpenGLES.framework */; };
+		B1E450D31597114100E0C5BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1E450D11597114100E0C5BE /* InfoPlist.strings */; };
+		B1E450D51597114100E0C5BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E450D41597114100E0C5BE /* main.m */; };
+		B1E450D91597114100E0C5BE /* MGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E450D81597114100E0C5BE /* MGAppDelegate.m */; };
+		B1E450DC1597114100E0C5BE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E450DA1597114100E0C5BE /* MainStoryboard_iPhone.storyboard */; };
+		B1E450DF1597114100E0C5BE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E450DD1597114100E0C5BE /* MainStoryboard_iPad.storyboard */; };
+		B1E450E11597114100E0C5BE /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B1E450E01597114100E0C5BE /* Shader.fsh */; };
+		B1E450E31597114100E0C5BE /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B1E450E21597114100E0C5BE /* Shader.vsh */; };
+		B1E450E61597114100E0C5BE /* MGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E450E51597114100E0C5BE /* MGViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1E450C01597114100E0C5BE /* MagicGlasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicGlasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E450C41597114100E0C5BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1E450C61597114100E0C5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1E450C81597114100E0C5BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1E450CA1597114100E0C5BE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B1E450CC1597114100E0C5BE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B1E450D01597114100E0C5BE /* MagicGlasses-Info.plist */ = {isa = PBXFileReference; path = "MagicGlasses-Info.plist"; sourceTree = "<group>"; };
+		B1E450D21597114100E0C5BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1E450D41597114100E0C5BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1E450D61597114100E0C5BE /* MagicGlasses-Prefix.pch */ = {isa = PBXFileReference; path = "MagicGlasses-Prefix.pch"; sourceTree = "<group>"; };
+		B1E450D71597114100E0C5BE /* MGAppDelegate.h */ = {isa = PBXFileReference; path = MGAppDelegate.h; sourceTree = "<group>"; };
+		B1E450D81597114100E0C5BE /* MGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGAppDelegate.m; sourceTree = "<group>"; };
+		B1E450DB1597114100E0C5BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B1E450DE1597114100E0C5BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B1E450E01597114100E0C5BE /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		B1E450E21597114100E0C5BE /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		B1E450E41597114100E0C5BE /* MGViewController.h */ = {isa = PBXFileReference; path = MGViewController.h; sourceTree = "<group>"; };
+		B1E450E51597114100E0C5BE /* MGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1E450BD1597114100E0C5BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E450C51597114100E0C5BE /* UIKit.framework in Frameworks */,
+				B1E450C71597114100E0C5BE /* Foundation.framework in Frameworks */,
+				B1E450C91597114100E0C5BE /* CoreGraphics.framework in Frameworks */,
+				B1E450CB1597114100E0C5BE /* GLKit.framework in Frameworks */,
+				B1E450CD1597114100E0C5BE /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1E450B51597114100E0C5BE = {
+			isa = PBXGroup;
+			children = (
+				B1E450CE1597114100E0C5BE /* MagicGlasses */,
+				B1E450C31597114100E0C5BE /* Frameworks */,
+				B1E450C11597114100E0C5BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1E450C11597114100E0C5BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1E450C01597114100E0C5BE /* MagicGlasses.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1E450C31597114100E0C5BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E450C41597114100E0C5BE /* UIKit.framework */,
+				B1E450C61597114100E0C5BE /* Foundation.framework */,
+				B1E450C81597114100E0C5BE /* CoreGraphics.framework */,
+				B1E450CA1597114100E0C5BE /* GLKit.framework */,
+				B1E450CC1597114100E0C5BE /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1E450CE1597114100E0C5BE /* MagicGlasses */ = {
+			isa = PBXGroup;
+			children = (
+				B1E450D71597114100E0C5BE /* MGAppDelegate.h */,
+				B1E450D81597114100E0C5BE /* MGAppDelegate.m */,
+				B1E450DA1597114100E0C5BE /* MainStoryboard_iPhone.storyboard */,
+				B1E450DD1597114100E0C5BE /* MainStoryboard_iPad.storyboard */,
+				B1E450E01597114100E0C5BE /* Shader.fsh */,
+				B1E450E21597114100E0C5BE /* Shader.vsh */,
+				B1E450E41597114100E0C5BE /* MGViewController.h */,
+				B1E450E51597114100E0C5BE /* MGViewController.m */,
+				B1E450CF1597114100E0C5BE /* Supporting Files */,
+			);
+			path = MagicGlasses;
+			sourceTree = "<group>";
+		};
+		B1E450CF1597114100E0C5BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1E450D01597114100E0C5BE /* MagicGlasses-Info.plist */,
+				B1E450D11597114100E0C5BE /* InfoPlist.strings */,
+				B1E450D41597114100E0C5BE /* main.m */,
+				B1E450D61597114100E0C5BE /* MagicGlasses-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1E450BF1597114100E0C5BE /* MagicGlasses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E450E91597114100E0C5BE /* Build configuration list for PBXNativeTarget "MagicGlasses" */;
+			buildPhases = (
+				B1E450BC1597114100E0C5BE /* Sources */,
+				B1E450BD1597114100E0C5BE /* Frameworks */,
+				B1E450BE1597114100E0C5BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicGlasses;
+			productName = MagicGlasses;
+			productReference = B1E450C01597114100E0C5BE /* MagicGlasses.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1E450B71597114100E0C5BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MG;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Roman Smirnov";
+			};
+			buildConfigurationList = B1E450BA1597114100E0C5BE /* Build configuration list for PBXProject "MagicGlasses" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1E450B51597114100E0C5BE;
+			productRefGroup = B1E450C11597114100E0C5BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1E450BF1597114100E0C5BE /* MagicGlasses */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1E450BE1597114100E0C5BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E450D31597114100E0C5BE /* InfoPlist.strings in Resources */,
+				B1E450DC1597114100E0C5BE /* MainStoryboard_iPhone.storyboard in Resources */,
+				B1E450DF1597114100E0C5BE /* MainStoryboard_iPad.storyboard in Resources */,
+				B1E450E11597114100E0C5BE /* Shader.fsh in Resources */,
+				B1E450E31597114100E0C5BE /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1E450BC1597114100E0C5BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E450D51597114100E0C5BE /* main.m in Sources */,
+				B1E450D91597114100E0C5BE /* MGAppDelegate.m in Sources */,
+				B1E450E61597114100E0C5BE /* MGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1E450D11597114100E0C5BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E450D21597114100E0C5BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1E450DA1597114100E0C5BE /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E450DB1597114100E0C5BE /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E450DD1597114100E0C5BE /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E450DE1597114100E0C5BE /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1E450E71597114100E0C5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E450E81597114100E0C5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1E450EA1597114100E0C5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicGlasses/MagicGlasses-Prefix.pch";
+				INFOPLIST_FILE = "MagicGlasses/MagicGlasses-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1E450EB1597114100E0C5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicGlasses/MagicGlasses-Prefix.pch";
+				INFOPLIST_FILE = "MagicGlasses/MagicGlasses-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1E450BA1597114100E0C5BE /* Build configuration list for PBXProject "MagicGlasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E450E71597114100E0C5BE /* Debug */,
+				B1E450E81597114100E0C5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E450E91597114100E0C5BE /* Build configuration list for PBXNativeTarget "MagicGlasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E450EA1597114100E0C5BE /* Debug */,
+				B1E450EB1597114100E0C5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1E450B71597114100E0C5BE /* Project object */;
+}
