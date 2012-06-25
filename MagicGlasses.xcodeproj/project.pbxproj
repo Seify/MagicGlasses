@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B150B1741598F2AB00EF30BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B150B1731598F2AB00EF30BD /* AVFoundation.framework */; };
+		B150B1771598F79B00EF30BD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B150B1761598F79B00EF30BD /* CoreVideo.framework */; };
 		B1E450C51597114100E0C5BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450C41597114100E0C5BE /* UIKit.framework */; };
 		B1E450C71597114100E0C5BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450C61597114100E0C5BE /* Foundation.framework */; };
 		B1E450C91597114100E0C5BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E450C81597114100E0C5BE /* CoreGraphics.framework */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B150B1731598F2AB00EF30BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B150B1761598F79B00EF30BD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		B1E450C01597114100E0C5BE /* MagicGlasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicGlasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E450C41597114100E0C5BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B1E450C61597114100E0C5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B150B1771598F79B00EF30BD /* CoreVideo.framework in Frameworks */,
+				B150B1741598F2AB00EF30BD /* AVFoundation.framework in Frameworks */,
 				B1E450C51597114100E0C5BE /* UIKit.framework in Frameworks */,
 				B1E450C71597114100E0C5BE /* Foundation.framework in Frameworks */,
 				B1E450C91597114100E0C5BE /* CoreGraphics.framework in Frameworks */,
@@ -79,6 +85,8 @@
 		B1E450C31597114100E0C5BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B150B1731598F2AB00EF30BD /* AVFoundation.framework */,
+				B150B1761598F79B00EF30BD /* CoreVideo.framework */,
 				B1E450C41597114100E0C5BE /* UIKit.framework */,
 				B1E450C61597114100E0C5BE /* Foundation.framework */,
 				B1E450C81597114100E0C5BE /* CoreGraphics.framework */,
@@ -306,6 +314,7 @@
 				B1E450EB1597114100E0C5BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

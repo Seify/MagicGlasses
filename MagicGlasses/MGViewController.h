@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface MGViewController : GLKViewController
+
+@interface MGViewController : GLKViewController <AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @end
