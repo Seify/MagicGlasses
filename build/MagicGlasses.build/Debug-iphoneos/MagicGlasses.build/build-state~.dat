@@ -1,0 +1,391 @@
+TMagicGlasses
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist
+cProcessInfoPlistFile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Info.plist" MagicGlasses/MagicGlasses-Info.plist
+cProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.pth MagicGlasses/MagicGlasses-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.o "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.o "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.o "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses" normal armv7
+cGenerateDSYMFile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app.dSYM" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses"
+cCopyStringsFile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/InfoPlist.strings" MagicGlasses/en.lproj/InfoPlist.strings
+cCompileStoryboard "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard"
+cCompileStoryboard "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPad.storyboard"
+cCpResource MagicGlasses/Shaders/Shader.fsh build/Debug-iphoneos/MagicGlasses.app/Shader.fsh
+cCpResource MagicGlasses/Shaders/Shader.vsh build/Debug-iphoneos/MagicGlasses.app/Shader.vsh
+cProcessProductPackaging "/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision"
+cProcessProductPackaging "/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision"
+cTouch "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"
+cProcessProductPackaging /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent"
+cCodeSign "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk
+c000000004FCC5ED90000000000000110
+t1338793689
+s272
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist
+c000000004FD00E5B00000000000001A7
+t1339035227
+s423
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist
+c000000004FD00E5B00000000000001E5
+t1339035227
+s485
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004FD00E60000000000018D130
+t1339035232
+s1626416
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004FD00E62000000000030EAB0
+t1339035234
+s3205808
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004FD00E6200000000000015F7
+t1339035234
+s5623
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/GLKit.framework/GLKit
+c000000004FD00E63000000000004B670
+t1339035235
+s308848
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004FD00E650000000000011190
+t1339035237
+s70032
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004FD00E670000000000000E8D
+t1339035239
+s3725
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004FD00E680000000000890DB0
+t1339035240
+s8981936
+
+N/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/Availability.h
+c000000004FD00E700000000000001B54
+t1339035248
+s6996
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m
+c000000004FE6D9C100000000000007E7
+t1340529089
+s2023
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGViewController.m
+c000000004FE6D9C10000000000002D2C
+t1340529089
+s11564
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MagicGlasses-Prefix.pch
+c000000004FE6D9C10000000000000147
+t1340529089
+s327
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/Shaders/Shader.fsh
+c000000004FE6D9C100000000000000E1
+t1340529089
+s225
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/Shaders/Shader.vsh
+c000000004FE6D9C10000000000000291
+t1340529089
+s657
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/InfoPlist.strings
+c000000004FE6D9C1000000000000002D
+t1340529089
+s45
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPad.storyboard
+c000000004FE6D9C100000000000005FE
+t1340529089
+s1534
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard
+c000000004FE6D9C100000000000005F7
+t1340529089
+s1527
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/main.m
+c000000004FE6D9C1000000000000015E
+t1340529089
+s350
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app.dSYM
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Info.plist
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/PkgInfo
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Shader.fsh
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Shader.vsh
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/MainStoryboard_iPad.storyboardc
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/MainStoryboard_iPhone.storyboardc
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.o
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.o
+t2
+s0
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MagicGlasses.LinkFileList
+c000000004FE6DA1A00000000000001A4
+t1340529178
+s420
+
+N/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision
+c000000004FD1C0D70000000000001C3F
+t1339146455
+s7231
+
+N/var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.pth
+t2
+s0
+
+NMagicGlasses/MagicGlasses-Info.plist
+c000000004FE6D9C1000000000000066B
+t1340529089
+s1643
+
+CBuild AST from "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m"
+r0
+
+CBuild AST from "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGViewController.m"
+r0
+
+CBuild AST from "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/main.m"
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies397cd29a1197b541^9da1e49a1197b541^---0#1#0#--18"Check dependencies36"1A1B2A9B-5E2C-4C57-A29E-CC7ED38B42B8-
+
+CCodeSign "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"
+s362221983.195968
+e362221983.500644
+r1
+xCodeSign
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"CodeSign build/Debug-iphoneos/MagicGlasses.app3946329f1197b541^113a809f1197b541^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/0000000000000000^872"CodeSign build/Debug-iphoneos/MagicGlasses.app    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv CODESIGN_ALLOCATE /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 6c377b9007e2d58d3c3ac66ac753c1fa09e8e5b5 "--resource-rules=/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist" --entitlements "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"36"D52F9D1D-131B-48E3-8C0C-5D3B280D7A14-
+
+CCompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.o "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s362221980.342313
+e362221980.883237
+r1
+xCompileC
+xbuild/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.o
+x/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m070a589c1197b541^d332e29c1197b541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m0000000000000000^3466"CompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.o MagicGlasses/MGAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-generated-files.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-own-target-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-all-target-headers.hmap" -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-project-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/include" -I/Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources/armv7" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources" "-F/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos" -include /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch -MMD -MT dependencies -MF "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.d" --serialize-diagnostics "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.dia" -c "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGAppDelegate.m" -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGAppDelegate.o"36"C3F02403-6B24-4911-B37A-5D87CBBA4E61-
+
+CCompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.o "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s362221980.342231
+e362221980.986305
+r1
+xCompileC
+xbuild/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.o
+x/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGViewController.m8028589c1197b541^c076fc9c1197b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/MGViewController.m0000000000000000^3484"CompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.o MagicGlasses/MGViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-generated-files.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-own-target-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-all-target-headers.hmap" -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-project-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/include" -I/Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources/armv7" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources" "-F/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos" -include /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch -MMD -MT dependencies -MF "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.d" --serialize-diagnostics "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.dia" -c "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MGViewController.m" -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MGViewController.o"36"39682CFD-CD6C-42FC-A1D6-5385A4668AD0-
+
+CCompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.o "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s362221980.342228
+e362221980.887312
+r1
+xCompileC
+xbuild/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.o
+x/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/main.m7423589c1197b541^0327e39c1197b541^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/main.m0000000000000000^3412"CompileC build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.o MagicGlasses/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-generated-files.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-own-target-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-all-target-headers.hmap" -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-project-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/include" -I/Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources/armv7" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources" "-F/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos" -include /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch -MMD -MT dependencies -MF "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.d" --serialize-diagnostics "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.dia" -c "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/main.m" -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/main.o"36"5D3117B0-1402-43EA-BDBE-5BE6A1F27AF4-
+
+CCompileStoryboard "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPad.storyboard"
+s362221982.326115
+e362221982.875329
+r1
+xCompileStoryboard
+x/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPad.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"CompileStoryboard MagicGlasses/en.lproj/MainStoryboard_iPad.storyboarde7c3539e1197b541^2313e09e1197b541^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPad.storyboard0000000000000000^958"CompileStoryboard MagicGlasses/en.lproj/MainStoryboard_iPad.storyboard    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode45-DP1.app/Contents/Developer/usr/bin/..    /Applications/Xcode45-DP1.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/MainStoryboard_iPad.storyboardc" "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPad.storyboard" --sdk /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"F4997156-7DC9-44B2-AD01-7F4935CD1C2D-
+
+CCompileStoryboard "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard"
+s362221982.325927
+e362221982.881652
+r1
+xCompileStoryboard
+x/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CompileStoryboard MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard3eb4539e1197b541^4565e39e1197b541^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^964"CompileStoryboard MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode45-DP1.app/Contents/Developer/usr/bin/..    /Applications/Xcode45-DP1.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/MainStoryboard_iPhone.storyboardc" "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/en.lproj/MainStoryboard_iPhone.storyboard" --sdk /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"358960C3-0DB2-4B68-85A9-669BA2062253-
+
+CCopyStringsFile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/InfoPlist.strings" MagicGlasses/en.lproj/InfoPlist.strings
+s362221982.325672
+e362221982.334792
+r1
+xCopyStringsFile
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj/InfoPlist.strings
+xMagicGlasses/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy MagicGlasses/en.lproj/InfoPlist.strings28b9539e1197b541^adbf559e1197b541^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/en.lproj/InfoPlist.strings0000000000000000^604"CopyStringsFile build/Debug-iphoneos/MagicGlasses.app/en.lproj/InfoPlist.strings MagicGlasses/en.lproj/InfoPlist.strings    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/en.lproj" -- MagicGlasses/en.lproj/InfoPlist.strings36"8912E3C0-F67B-4140-9882-D66CBC18CFBE-
+
+CCpResource /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist
+s362221978.922713
+e362221978.937777
+r1
+xCpResource
+x/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plistc974ec9a1197b541^c861589b1197b541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist000000000080d041^778"CpResource /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"36"3EDBC927-9344-4019-B47F-FF95C9FC9E65-
+
+CCpResource MagicGlasses/Shaders/Shader.fsh build/Debug-iphoneos/MagicGlasses.app/Shader.fsh
+s362221982.326306
+e362221982.329707
+r1
+xCpResource
+xMagicGlasses/Shaders/Shader.fsh
+xbuild/Debug-iphoneos/MagicGlasses.app/Shader.fsh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphoneos/MagicGlasses.app/Shader.fsheeb2539e1197b541^bd6f549e1197b541^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Shader.fsh000000000080d041^625"CpResource MagicGlasses/Shaders/Shader.fsh build/Debug-iphoneos/MagicGlasses.app/Shader.fsh    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/Shaders/Shader.fsh" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"36"8B67B22E-851B-4B19-951D-BF234B8F65F5-
+
+CCpResource MagicGlasses/Shaders/Shader.vsh build/Debug-iphoneos/MagicGlasses.app/Shader.vsh
+s362221982.331158
+e362221982.334790
+r1
+xCpResource
+xMagicGlasses/Shaders/Shader.vsh
+xbuild/Debug-iphoneos/MagicGlasses.app/Shader.vsh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphoneos/MagicGlasses.app/Shader.vshaef2549e1197b541^a6b9559e1197b541^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Shader.vsh000000000080d041^625"CpResource MagicGlasses/Shaders/Shader.vsh build/Debug-iphoneos/MagicGlasses.app/Shader.vsh    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/Shaders/Shader.vsh" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"36"69BC052A-F95F-4177-AB1F-796C621AF422-
+
+CGenerateDSYMFile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app.dSYM" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses"
+s362221982.239592
+e362221982.316072
+r1
+xGenerateDSYMFile
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app.dSYM
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Generating /Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app.dSYM0e873d9e1197b541^68e7509e1197b541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app.dSYM000000000080d041^665"GenerateDSYMFile build/Debug-iphoneos/MagicGlasses.app.dSYM build/Debug-iphoneos/MagicGlasses.app/MagicGlasses    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses" -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app.dSYM"36"682AE4C6-F032-4B17-A36C-7F2A9A70B3B0-
+
+CLd "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses" normal armv7
+s362221980.995045
+e362221982.232038
+r1
+xLd
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Link /Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses213e009d1197b541^02653b9e1197b541^---0#0#0#--1175"Ld build/Debug-iphoneos/MagicGlasses.app/MagicGlasses normal armv7    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk "-L/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos" "-F/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos" -filelist "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/Objects-normal/armv7/MagicGlasses.LinkFileList" -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -framework UIKit -framework Foundation -framework CoreGraphics -framework GLKit -framework OpenGLES -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/MagicGlasses"36"09B7CF3B-5683-4CBE-A04F-116B416B4FAA-
+
+CProcessInfoPlistFile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Info.plist" MagicGlasses/MagicGlasses-Info.plist
+s362221978.922734
+e362221978.938243
+r1
+xProcessInfoPlistFile
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Info.plist
+xMagicGlasses/MagicGlasses-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Process MagicGlasses/MagicGlasses-Info.plist876cec9a1197b541^c366589b1197b541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/MagicGlasses-Info.plist0000000000000000^814"ProcessInfoPlistFile build/Debug-iphoneos/MagicGlasses.app/Info.plist MagicGlasses/MagicGlasses-Info.plist    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MagicGlasses/MagicGlasses-Info.plist -genpkginfo "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/ResourceRules.plist" -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/Info.plist"36"F9BD7CFD-3F86-4F04-ABF8-4B25155CE58D-
+
+CProcessPCH /Users/Seify/Library/Developer/Xcode/DerivedData/MagicGlasses-dsigwsmeqjgjoqayjnlpecjntnwl/Index/PrecompiledHeaders/MagicGlasses-Prefix-gdulgohdqrnnapcskzmtprhsafos_ast/MagicGlasses-Prefix.pch.pth MagicGlasses/MagicGlasses-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.pth MagicGlasses/MagicGlasses-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s362221978.947438
+e362221980.335385
+r1
+xProcessPCH
+x/var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.pth
+xMagicGlasses/MagicGlasses-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Precompile MagicGlasses/MagicGlasses-Prefix.pche1d1f29a1197b541^8cd6559c1197b541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/MagicGlasses/MagicGlasses-Prefix.pch0000000000000000^3467"ProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.pth MagicGlasses/MagicGlasses-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-generated-files.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-own-target-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-all-target-headers.hmap" -iquote "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses-project-headers.hmap" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/include" -I/Applications/Xcode45-DP1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources/armv7" "-I/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/DerivedSources" "-F/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos" --serialize-diagnostics /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.dia -c "/Users/Seify/Desktop/My Projects/MagicGlasses/MagicGlasses/MagicGlasses-Prefix.pch" -o /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MagicGlasses-Prefix-fkowonfbwqrwobfzimeulvwuhxpv/MagicGlasses-Prefix.pch.d36"227B9A74-85D3-45FD-BA33-422DA8463B1A-
+
+CProcessProductPackaging "/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision" "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision"
+s362221982.918681
+e362221983.150112
+r1
+xProcessProductPackaging
+x/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection197"ProcessProductPackaging "/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision" build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision2f4feb9e1197b541^836b269f1197b541^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision0000000000000000^714"ProcessProductPackaging "/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision" build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/Seify/Library/MobileDevice/Provisioning Profiles/D64515FF-C7D2-4DCC-A757-C2CED5A3FC3B.mobileprovision" -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app/embedded.mobileprovision"36"F63D3B3F-D90D-4811-8E86-0451270F1218-
+
+CProcessProductPackaging /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent"
+s362221983.171251
+e362221983.187865
+r1
+xProcessProductPackaging
+x/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection228"ProcessProductPackaging /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcentf5f62b9f1197b541^7713309f1197b541^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/Seify/Desktop/My%20Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent000000000080d041^802"ProcessProductPackaging /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist -entitlements -format xml -o "/Users/Seify/Desktop/My Projects/MagicGlasses/build/MagicGlasses.build/Debug-iphoneos/MagicGlasses.build/MagicGlasses.xcent"36"AFA8CD9B-2FA9-454A-BD37-BC15CF9D922B-
+
+CTouch "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"
+s362221983.158401
+e362221983.163325
+r1
+xTouch
+x/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Touch /Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app3ba8289f1197b541^6cce299f1197b541^---0#0#0#--407"Touch build/Debug-iphoneos/MagicGlasses.app    cd "/Users/Seify/Desktop/My Projects/MagicGlasses"    setenv PATH "/Applications/Xcode45-DP1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode45-DP1.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/Seify/Desktop/My Projects/MagicGlasses/build/Debug-iphoneos/MagicGlasses.app"36"43FAFA35-39C2-4C1F-B501-E732DB2A078B-
+

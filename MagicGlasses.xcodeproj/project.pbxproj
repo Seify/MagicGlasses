@@ -29,17 +29,17 @@
 		B1E450C81597114100E0C5BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B1E450CA1597114100E0C5BE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B1E450CC1597114100E0C5BE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		B1E450D01597114100E0C5BE /* MagicGlasses-Info.plist */ = {isa = PBXFileReference; path = "MagicGlasses-Info.plist"; sourceTree = "<group>"; };
+		B1E450D01597114100E0C5BE /* MagicGlasses-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicGlasses-Info.plist"; sourceTree = "<group>"; };
 		B1E450D21597114100E0C5BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1E450D41597114100E0C5BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B1E450D61597114100E0C5BE /* MagicGlasses-Prefix.pch */ = {isa = PBXFileReference; path = "MagicGlasses-Prefix.pch"; sourceTree = "<group>"; };
-		B1E450D71597114100E0C5BE /* MGAppDelegate.h */ = {isa = PBXFileReference; path = MGAppDelegate.h; sourceTree = "<group>"; };
+		B1E450D61597114100E0C5BE /* MagicGlasses-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicGlasses-Prefix.pch"; sourceTree = "<group>"; };
+		B1E450D71597114100E0C5BE /* MGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGAppDelegate.h; sourceTree = "<group>"; };
 		B1E450D81597114100E0C5BE /* MGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGAppDelegate.m; sourceTree = "<group>"; };
 		B1E450DB1597114100E0C5BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B1E450DE1597114100E0C5BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B1E450E01597114100E0C5BE /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		B1E450E21597114100E0C5BE /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		B1E450E41597114100E0C5BE /* MGViewController.h */ = {isa = PBXFileReference; path = MGViewController.h; sourceTree = "<group>"; };
+		B1E450E41597114100E0C5BE /* MGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGViewController.h; sourceTree = "<group>"; };
 		B1E450E51597114100E0C5BE /* MGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,7 +238,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -257,7 +257,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>Shader.fsh</key>
+		<data>
+		xZML/hN2oOePK32U+8FCqpluGrQ=
+		</data>
+		<key>Shader.vsh</key>
+		<data>
+		B7vAkzVYw5ovS/tZs+N8QOQec0w=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		+Ilc2Q2hP0Xg08Tua3rGNfQ32OY=
+		</data>
+		<key>en.lproj/InfoPlist.strings</key>
+		<data>
+		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>en.lproj/MainStoryboard_iPad.storyboardc/2-view-5.nib</key>
+		<data>
+		LTXezC/RMDHf0eoRJ9Tzql8oHKY=
+		</data>
+		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-2.nib</key>
+		<data>
+		Q+Lg+YZA4ZqLkvPwuuiItltEM7A=
+		</data>
+		<key>en.lproj/MainStoryboard_iPhone.storyboardc/2-view-3.nib</key>
+		<data>
+		N/BZHtv/m4dMg+Wcx4uMidpPUC8=
+		</data>
+		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-2.nib</key>
+		<data>
+		DxpypFNjc3w7Gz+Ofdkme+MLL6c=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>
