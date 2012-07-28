@@ -4,9 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>PaintedPageSetupButton.png</key>
+		<data>
+		k5oKRf6V0y5PYaBdWTRj3Vi6GVo=
+		</data>
+		<key>PaintedPageSetupButton@2x.png</key>
+		<data>
+		fz4ZAit2PgSDZ9RXf4KwmTaT5Cc=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>RedSky.png</key>
+		<data>
+		Po8s4Gl7x+ohPNLpgXhpwO+Tbos=
+		</data>
+		<key>RedSky@2x.png</key>
+		<data>
+		iML1gyDazpCCmir+2CqqabV//Jc=
 		</data>
 		<key>Shader.fsh</key>
 		<data>
@@ -18,7 +34,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		lmYuBkV5EluLpqEB6Wv/MXRS9MY=
+		bL9jNuUr93AebCgz3w5NPEEpqO8=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<data>
@@ -26,19 +42,23 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/2-view-5.nib</key>
 		<data>
-		LTXezC/RMDHf0eoRJ9Tzql8oHKY=
+		pgyCVKgorMU5BMjpUyKBi/OEaWw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-2.nib</key>
 		<data>
-		Q+Lg+YZA4ZqLkvPwuuiItltEM7A=
+		TqJar5YJvFOLkHbqf9i+czWdlOQ=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/2-view-3.nib</key>
 		<data>
-		N/BZHtv/m4dMg+Wcx4uMidpPUC8=
+		2mGSYRbt235Llfuc6ggTRfe8eGU=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-2.nib</key>
 		<data>
-		DxpypFNjc3w7Gz+Ofdkme+MLL6c=
+		hWfGZPlPlcdV6C5PSUm8q7yuE6E=
+		</data>
+		<key>roomphoto.png</key>
+		<data>
+		hMzbdGTQSB2xrOVy+sBF988mkBs=
 		</data>
 	</dict>
 	<key>rules</key>

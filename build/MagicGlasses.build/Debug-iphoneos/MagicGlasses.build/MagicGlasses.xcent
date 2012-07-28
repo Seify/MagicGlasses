@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>TBTS35LRK2.ru.seify.MagicGlasses</string>
+	<string>6N5J8DZMBX.ru.seify.MagicGlasses</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>TBTS35LRK2.ru.seify.MagicGlasses</string>
+		<string>6N5J8DZMBX.ru.seify.MagicGlasses</string>
 	</array>
 </dict>
 </plist>

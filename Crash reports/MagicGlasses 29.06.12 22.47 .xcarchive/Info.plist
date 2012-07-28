@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppStoreFileSize</key>
+	<integer>1015958</integer>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/MagicGlasses.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>ru.seify.MagicGlasses</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0</string>
+		<key>CFBundleVersion</key>
+		<string>1.0</string>
+		<key>SigningIdentity</key>
+		<string>iPhone Developer: Roman Smirnov (FJ5TFGGS5H)</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2012-06-29T18:47:09Z</date>
+	<key>Name</key>
+	<string>MagicGlasses</string>
+	<key>SchemeName</key>
+	<string>MagicGlasses</string>
+</dict>
+</plist>
