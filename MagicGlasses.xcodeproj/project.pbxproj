@@ -16,6 +16,7 @@
 		B125D537159C794B00F880BF /* roomphoto.png in Resources */ = {isa = PBXBuildFile; fileRef = B125D536159C794B00F880BF /* roomphoto.png */; };
 		B125D53B159C7C5B00F880BF /* PaintedPageSetupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B125D539159C7C5B00F880BF /* PaintedPageSetupButton.png */; };
 		B125D53C159C7C5B00F880BF /* PaintedPageSetupButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125D53A159C7C5B00F880BF /* PaintedPageSetupButton@2x.png */; };
+		B12B3499162CA0DD00FC8B17 /* face_monster_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B12B3498162CA0DD00FC8B17 /* face_monster_1.png */; };
 		B150B1741598F2AB00EF30BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B150B1731598F2AB00EF30BD /* AVFoundation.framework */; };
 		B150B1771598F79B00EF30BD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B150B1761598F79B00EF30BD /* CoreVideo.framework */; };
 		B1CF440B159BA0F10021A132 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CF440A159BA0F10021A132 /* CoreMedia.framework */; };
@@ -47,6 +48,7 @@
 		B125D536159C794B00F880BF /* roomphoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = roomphoto.png; path = ../roomphoto.png; sourceTree = "<group>"; };
 		B125D539159C7C5B00F880BF /* PaintedPageSetupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaintedPageSetupButton.png; sourceTree = "<group>"; };
 		B125D53A159C7C5B00F880BF /* PaintedPageSetupButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PaintedPageSetupButton@2x.png"; sourceTree = "<group>"; };
+		B12B3498162CA0DD00FC8B17 /* face_monster_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face_monster_1.png; path = Textures/Filters/Doom/face_monster_1.png; sourceTree = "<group>"; };
 		B150B1731598F2AB00EF30BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B150B1761598F79B00EF30BD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		B1CF440A159BA0F10021A132 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -126,6 +128,7 @@
 		B1E450CE1597114100E0C5BE /* MagicGlasses */ = {
 			isa = PBXGroup;
 			children = (
+				B12B3498162CA0DD00FC8B17 /* face_monster_1.png */,
 				B100D4A115A06CCD0042C7A5 /* RedSky.png */,
 				B100D4A215A06CCD0042C7A5 /* RedSky@2x.png */,
 				B1E450D71597114100E0C5BE /* MGAppDelegate.h */,
@@ -223,6 +226,7 @@
 				B125D53C159C7C5B00F880BF /* PaintedPageSetupButton@2x.png in Resources */,
 				B100D4A315A06CCD0042C7A5 /* RedSky.png in Resources */,
 				B100D4A415A06CCD0042C7A5 /* RedSky@2x.png in Resources */,
+				B12B3499162CA0DD00FC8B17 /* face_monster_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +298,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PROVISIONING_PROFILE = "83E4ED59-6153-4F8D-8381-B01637631820";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "83E4ED59-6153-4F8D-8381-B01637631820";
+				PROVISIONING_PROFILE = "C56E13A2-ECA4-47B0-8E34-797C7153AFCC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C56E13A2-ECA4-47B0-8E34-797C7153AFCC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,8 +312,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Roman Smirnov (FJ5TFGGS5H)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roman Smirnov (FJ5TFGGS5H)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Roman Smirnov";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Roman Smirnov";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -317,8 +321,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "83E4ED59-6153-4F8D-8381-B01637631820";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "83E4ED59-6153-4F8D-8381-B01637631820";
+				PROVISIONING_PROFILE = "62E05996-4498-4468-953A-6D9CF7D800B4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "62E05996-4498-4468-953A-6D9CF7D800B4";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

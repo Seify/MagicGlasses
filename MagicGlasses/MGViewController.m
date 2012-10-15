@@ -8,6 +8,11 @@
 
 #define SCREEN_SCALE_FACTOR (4.0)
 
+#define TEXTURE_FB_WIDTH 512
+#define TEXTURE_FB_HEIGH 512
+
+#define ASPECT_RATIO (4.0/3.0)
+
 #import "MGViewController.h"
 #import <CoreVideo/CoreVideo.h>
 
@@ -21,6 +26,7 @@
     BOOL isDetectorDetecting;
     
     CIImage *redSkyImage;
+    CIImage *monsterfaceImage1;
     
     CIFilter *affineTransformFilter;
     CIFilter *redSkyFilter;
@@ -155,15 +161,33 @@
 //    redSkyImage = [CIImage imageWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"RedSky" withExtension:@"png"]];
     UIImage *tempImage = [UIImage imageNamed:@"RedSky.png"];
     
-    UIGraphicsBeginImageContext(CGSizeMake(640, 480));
+//    UIGraphicsBeginImageContext(CGSizeMake(640, 480));
+//    
+//    [tempImage drawInRect:CGRectMake(0, 0, 640, 480)];
+    UIGraphicsBeginImageContext(CGSizeMake(TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH));
     
-    [tempImage drawInRect:CGRectMake(0, 0, 640, 480)];
+    [tempImage drawInRect:CGRectMake(0, 0, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)];
     
     UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
     
     redSkyImage = [CIImage imageWithCGImage:newImage.CGImage];
+    
+    
+    
+    tempImage = [UIImage imageNamed:@"face_monster_1.png"];
+    
+    UIGraphicsBeginImageContext(CGSizeMake(TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH));
+    
+    [tempImage drawInRect:CGRectMake(0, 0, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)];
+    
+    newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    monsterfaceImage1 = [CIImage imageWithCGImage:newImage.CGImage];
+    
     
     
 //    float scaleX = 512.0 / redSkyImage.extent.size.width;
@@ -204,7 +228,8 @@
      m_i32TexSize by m_i32TexSize.
      */
     
-	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT16, 1024, 1024);
+    
+	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT16, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH);
     
 	// Create a texture for rendering to
 	glGenTextures(1, &currentDrawingTexture);
@@ -212,22 +237,16 @@
     
     glBindTexture(GL_TEXTURE_2D, currentDrawingTexture);
         
-    GLubyte *newDrawingTexture = (GLubyte *)malloc(1024 * 1024 * 4 * sizeof(GLubyte));
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1024, 1024, 0, GL_RGBA, GL_UNSIGNED_BYTE, newDrawingTexture);
-    free(newDrawingTexture);
-    
-    //	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 1024, 1024, 0, GL_RGB, GL_UNSIGNED_SHORT_5_6_5, 0);
+    GLubyte *newDrawingTexture = (GLubyte *)malloc(TEXTURE_FB_WIDTH * TEXTURE_FB_HEIGH * 4 * sizeof(GLubyte));
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH, 0, GL_RGBA, GL_UNSIGNED_BYTE, newDrawingTexture);
+    free(newDrawingTexture);    
     
 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    
-    
-    
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1024, 1024, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
-    
-    //	[self loadDrawingTexture];
+
+    //	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1024, 1024, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
     
 	// Create the object that will allow us to render to the aforementioned texture
 	glGenFramebuffers(1, &drawingToTextureFramebuffer);
@@ -292,57 +311,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+
+- (NSUInteger)supportedInterfaceOrientations
 {
-    return YES;
-    
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-//        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-//    } else {
-//        return YES;
-//    }
+    return UIInterfaceOrientationMaskLandscape;
 }
 
-- (void)cleanUpTextures
-{    
-    
-    if (_videoTexture)
-    {
-        CFRelease(_videoTexture);
-        _videoTexture = NULL;
-    }
-    
-    // Periodic texture cache flush every frame
-    CVOpenGLESTextureCacheFlush(_videoTextureCache, 0);
-}
 
-- (void)detectFacesOnImage:(CIImage *)image{
-    
-//    NSLog(@"%@ : %@", self, NSStringFromSelector(_cmd));
-    
+- (void)detectFacesOnImage:(CIImage *)image
+{
     @autoreleasepool {
-        
         faces = nil;
-        
         faces = [self.detector featuresInImage:image];
-        
-//        if ([faces count] > 0){
-//            NSLog(@"%@ : %@ found %d faces", self, NSStringFromSelector(_cmd), [faces count]);
-//        }
-        
-//        for (CIFaceFeature *feature in faces){
-//            NSLog(@"feature %d", [faces indexOfObject:feature]);
-//            if (feature.hasMouthPosition)
-//                NSLog(@"mouth position = (%f, %f)", feature.mouthPosition.x, feature.mouthPosition.y);
-//            if (feature.hasLeftEyePosition)
-//                NSLog(@"mouth position = (%f, %f)", feature.leftEyePosition.x, feature.leftEyePosition.y);
-//            if (feature.hasRightEyePosition)
-//                NSLog(@"mouth position = (%f, %f)", feature.rightEyePosition.x, feature.rightEyePosition.y);
-//        }
-        
-        
         isDetectorDetecting = NO;
-        
     }
 }
 
@@ -351,62 +332,8 @@
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
-    CVReturn err;
 	CVImageBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-    size_t width = CVPixelBufferGetWidth(pixelBuffer);
-    size_t height = CVPixelBufferGetHeight(pixelBuffer);
-    
-    if (!_videoTextureCache)
-    {
-        NSLog(@"No video texture cache");
-        return;
-    }
-    
-    [self cleanUpTextures];
-    
-    // CVOpenGLESTextureCacheCreateTextureFromImage will create GLES texture
-    // optimally from CVImageBufferRef.
-    
-//    glActiveTexture(GL_TEXTURE0);
-//    err = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
-//                                                       _videoTextureCache,
-//                                                       pixelBuffer,
-//                                                       NULL,
-//                                                       GL_TEXTURE_2D,
-//                                                       GL_RGBA,
-//                                                       width,
-//                                                       height,
-//                                                       GL_RGBA,
-//                                                       GL_UNSIGNED_BYTE,
-//                                                       0,
-//                                                       &_videoTexture);
-//    if (err)
-//    {
-//        NSLog(@"Error at CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
-//    }
-//    
-//    glBindTexture(CVOpenGLESTextureGetTarget(_videoTexture), CVOpenGLESTextureGetName(_videoTexture));
-//	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-//	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    
-    // on iPhone iOS 5.1.1 works UNSTABLE %(
     self.ciimage = [CIImage imageWithCVPixelBuffer:pixelBuffer];
-
-//    self.ciimage = [CIImage imageWithTexture:CVOpenGLESTextureGetName(_videoTexture)
-//                                                       size:CGSizeMake(width, height)
-//                                                    flipped:NO
-//                                                 colorSpace:CGColorSpaceCreateDeviceRGB()];
-    
-//    NSLog(@"self.ciimage.extent = (%f, %f, %f, %f)", self.ciimage.extent.origin.x, self.ciimage.extent.origin.y, self.ciimage.extent.size.width, self.ciimage.extent.size.height);
-//
-//    NSLog(@"redSkyImage.extent = (%f, %f, %f, %f)", redSkyImage.extent.origin.x, redSkyImage.extent.origin.y, redSkyImage.extent.size.width, redSkyImage.extent.size.height);
-
-
-    
-    [redSkyFilter setValue:redSkyImage forKey:@"inputImage"];
-    [redSkyFilter setValue:self.ciimage forKey:@"inputBackgroundImage"];
-    self.ciimage = [redSkyFilter valueForKey:@"outputImage"];
-    
     // рисуем монстров вместо лиц
     // устанавливаем текстуру в которую будем рисовать
     
@@ -416,48 +343,17 @@
     for (CIFaceFeature *feature in faces){
         
         
-        if (feature.hasMouthPosition)
-            NSLog(@"mouth position = (%f, %f)", feature.mouthPosition.x, feature.mouthPosition.y);
-        if (feature.hasLeftEyePosition)
-            NSLog(@"mouth position = (%f, %f)", feature.leftEyePosition.x, feature.leftEyePosition.y);
-        if (feature.hasRightEyePosition)
-            NSLog(@"mouth position = (%f, %f)", feature.rightEyePosition.x, feature.rightEyePosition.y);
+//        if (feature.hasMouthPosition)
+//            NSLog(@"mouth position = (%f, %f)", feature.mouthPosition.x, feature.mouthPosition.y);
+//        if (feature.hasLeftEyePosition)
+//            NSLog(@"mouth position = (%f, %f)", feature.leftEyePosition.x, feature.leftEyePosition.y);
+//        if (feature.hasRightEyePosition)
+//            NSLog(@"mouth position = (%f, %f)", feature.rightEyePosition.x, feature.rightEyePosition.y);
     }
     
 
     
-    [pixelateFilter setValue:self.ciimage forKey: @"inputImage"];
-    self.ciimage = [pixelateFilter valueForKey:@"outputImage"];
-    
-    
-    [pixelateFilter setValue:nil forKey: @"inputImage"];
-    
-    [redSkyFilter setValue:nil forKey:@"inputImage"];
-    [redSkyFilter setValue:nil forKey:@"inputBackgroundImage"];
 
-    
-    
-
-//    получаем CIImage по-разному в зависимости от версии iOS
-//    
-//    CIImage *tempImage = [[CIImage alloc] init];
-//    if ([tempImage respondsToSelector:@selector(initWithTexture:size:flipped:colorSpace:)])
-//    {
-//        // iOS 6 branch
-//        if (_videoTexture){
-//            self.ciimage = [[CIImage alloc] initWithTexture:CVOpenGLESTextureGetName(_videoTexture)
-//                                                       size:CGSizeMake(width, height)
-//                                                    flipped:NO
-//                                                 colorSpace:CGColorSpaceCreateDeviceRGB()];
-//        }
-//    }
-//    else {
-//        // iOS 5 branch
-//
-//        // on iPhone works only in Portrait mode
-//        self.ciimage = [CIImage imageWithCVPixelBuffer:pixelBuffer];
-//    }
-//    tempImage = nil;
 
 //    detect faces
 
@@ -470,7 +366,6 @@
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
 //    NSLog(@"%@ : %@", self, NSStringFromSelector(_cmd));
-    
 }
 
 #pragma mark - GLKView and GLKViewController delegate methods
@@ -482,7 +377,6 @@
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-    // рисуем в текстуру
     CIImage *newCIImage = nil;
     
     GLint defaultFBO;
@@ -490,6 +384,8 @@
     
     if (self.cicontext && self.ciimage){
         
+        // drawing to texture
+
         glBindTexture(GL_TEXTURE_2D, 0);
         
         glBindFramebuffer(GL_FRAMEBUFFER, drawingToTextureFramebuffer);
@@ -497,27 +393,66 @@
         glClearColor(0.5, 0.0, 0.0, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        
         [self.cicontext drawImage:self.ciimage
-                           inRect:CGRectMake(0, 0, 350, 350)
+                           inRect:CGRectMake(0, 0, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
                          fromRect:self.ciimage.extent];
+        
+        
+        
+        // рисуем монстров вместо людей
+        //TODO: add drawing monsters code here
+        
+        for (CIFaceFeature *feature in faces){
+
+            [self.cicontext drawImage:monsterfaceImage1
+                               inRect:CGRectMake(feature.mouthPosition.x, feature.mouthPosition.y, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
+                             fromRect:monsterfaceImage1.extent];
+
+            
+            //        if (feature.hasMouthPosition)
+            //            NSLog(@"mouth position = (%f, %f)", feature.mouthPosition.x, feature.mouthPosition.y);
+            //        if (feature.hasLeftEyePosition)
+            //            NSLog(@"mouth position = (%f, %f)", feature.leftEyePosition.x, feature.leftEyePosition.y);
+            //        if (feature.hasRightEyePosition)
+            //            NSLog(@"mouth position = (%f, %f)", feature.rightEyePosition.x, feature.rightEyePosition.y);
+        }
+        
+        
+        newCIImage = [CIImage imageWithTexture:currentDrawingTexture
+                                          size:CGSizeMake(TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
+                                       flipped:NO
+                                    colorSpace:CGColorSpaceCreateDeviceRGB()];
+        
     }
     
     
-    // рисуем полученную текстуру
     glBindFramebuffer(GL_FRAMEBUFFER, defaultFBO);
     
-    newCIImage = [CIImage imageWithTexture:currentDrawingTexture
-                                      size:CGSizeMake(1024, 1024)
-                                   flipped:NO
-                                colorSpace:CGColorSpaceCreateDeviceRGB()];
+    //TODO:leaving filters here creates artefacts. Do smth with it.
 
+    // making red sky effect
+    [redSkyFilter setValue:redSkyImage forKey:@"inputImage"];
+    [redSkyFilter setValue:newCIImage forKey:@"inputBackgroundImage"];
+    newCIImage = [redSkyFilter valueForKey:@"outputImage"];
     
-    glClearColor(0.0, 0.5, 0.0, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+//    // making pixelate effect
+//    [pixelateFilter setValue:newCIImage forKey: @"inputImage"];
+//    newCIImage = [pixelateFilter valueForKey:@"outputImage"];
+    
+    
+    // free filters
+    [pixelateFilter setValue:nil forKey: @"inputImage"];
+    
+    [redSkyFilter setValue:nil forKey:@"inputImage"];
+    [redSkyFilter setValue:nil forKey:@"inputBackgroundImage"];
 
+        
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+    
     [self.cicontext drawImage:newCIImage
-                       inRect:CGRectMake(0, 0, 100, 100)
+                       inRect:CGRectMake(0, 0, screenWidth / SCREEN_SCALE_FACTOR * ASPECT_RATIO, screenHeight / SCREEN_SCALE_FACTOR)
                      fromRect:newCIImage.extent];
 
     newCIImage = nil;
