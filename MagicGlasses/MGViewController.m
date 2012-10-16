@@ -321,7 +321,7 @@
 - (void)detectFacesOnImage:(CIImage *)image
 {
     @autoreleasepool {
-        faces = nil;
+//        faces = nil;
         faces = [self.detector featuresInImage:image];
         isDetectorDetecting = NO;
     }
@@ -394,27 +394,32 @@
         glClear(GL_COLOR_BUFFER_BIT);
 
         [self.cicontext drawImage:self.ciimage
-                           inRect:CGRectMake(0, 0, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
+//                           inRect:CGRectMake(0, 0, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
+                           inRect:CGRectMake(0, 0, 640, 480)
                          fromRect:self.ciimage.extent];
         
         
         
         // рисуем монстров вместо людей
-        //TODO: add drawing monsters code here
         
         for (CIFaceFeature *feature in faces){
-
-            [self.cicontext drawImage:monsterfaceImage1
-                               inRect:CGRectMake(feature.mouthPosition.x, feature.mouthPosition.y, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
-                             fromRect:monsterfaceImage1.extent];
-
             
-            //        if (feature.hasMouthPosition)
-            //            NSLog(@"mouth position = (%f, %f)", feature.mouthPosition.x, feature.mouthPosition.y);
-            //        if (feature.hasLeftEyePosition)
-            //            NSLog(@"mouth position = (%f, %f)", feature.leftEyePosition.x, feature.leftEyePosition.y);
-            //        if (feature.hasRightEyePosition)
-            //            NSLog(@"mouth position = (%f, %f)", feature.rightEyePosition.x, feature.rightEyePosition.y);
+            if (feature.hasMouthPosition && feature.hasLeftEyePosition && feature.hasRightEyePosition)
+            {
+                float mWidth = (feature.rightEyePosition.x - feature.leftEyePosition.x) * 6.0;
+                float mHeight = (feature.leftEyePosition.y - feature.mouthPosition.y) * 6.0;
+                float mOriginX = feature.leftEyePosition.x - (feature.rightEyePosition.x - feature.leftEyePosition.x) * 2.5;
+                float mOriginY = feature.mouthPosition.y - (feature.leftEyePosition.y - feature.mouthPosition.y) * 2.5;
+
+                
+                CGRect monsterRect = CGRectMake(mOriginX, mOriginY, mWidth, mHeight);
+                
+                NSLog(@"monster rect = (%f, %f, %f, %f)", monsterRect.origin.x, monsterRect.origin.y, monsterRect.size.width, monsterRect.size.height);
+
+                [self.cicontext drawImage:monsterfaceImage1
+                                   inRect:monsterRect
+                                 fromRect:monsterfaceImage1.extent];
+            }
         }
         
         
