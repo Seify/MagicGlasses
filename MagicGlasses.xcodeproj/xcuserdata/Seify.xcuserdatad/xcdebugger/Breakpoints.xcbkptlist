@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MagicGlasses/MGViewController.m"
-         timestampString = "372023683.865588"
+         timestampString = "372366667.84176"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "321"
-         endingLineNumber = "321"
+         startingLineNumber = "335"
+         endingLineNumber = "335"
          landmarkName = "-detectFacesOnImage:"
          landmarkType = "5">
       </FileBreakpoint>

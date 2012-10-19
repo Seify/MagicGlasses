@@ -8,8 +8,8 @@
 
 #define SCREEN_SCALE_FACTOR (4.0)
 
-#define TEXTURE_FB_WIDTH 512
-#define TEXTURE_FB_HEIGH 512
+#define TEXTURE_FB_WIDTH 352
+#define TEXTURE_FB_HEIGH 288
 
 #define ASPECT_RATIO (4.0/3.0)
 
@@ -27,6 +27,7 @@
     
     CIImage *redSkyImage;
     CIImage *monsterfaceImage1;
+    CIImage *chainsaw;
     
     CIFilter *affineTransformFilter;
     CIFilter *redSkyFilter;
@@ -88,7 +89,8 @@
     
     [_session beginConfiguration];
 
-    _session.sessionPreset = AVCaptureSessionPreset640x480;
+    _session.sessionPreset = AVCaptureSessionPreset352x288;
+//    _session.sessionPreset = AVCaptureSessionPreset640x480;
 //    _session.sessionPreset = AVCaptureSessionPreset1280x720;
 
     
@@ -189,6 +191,18 @@
     monsterfaceImage1 = [CIImage imageWithCGImage:newImage.CGImage];
     
     
+//    tempImage = [UIImage imageNamed:@"face_monster_1.png"];
+    tempImage = [UIImage imageNamed:@"chainsaw.png"];
+    
+    UIGraphicsBeginImageContext(CGSizeMake(TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH));
+    
+    [tempImage drawInRect:CGRectMake(0, 0, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)];
+    
+    newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    chainsaw = [CIImage imageWithCGImage:newImage.CGImage];
     
 //    float scaleX = 512.0 / redSkyImage.extent.size.width;
 //    float scaleY = (768.0/2.0) / redSkyImage.extent.size.height;
@@ -395,13 +409,12 @@
 
         [self.cicontext drawImage:self.ciimage
 //                           inRect:CGRectMake(0, 0, TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
-                           inRect:CGRectMake(0, 0, 640, 480)
+                           inRect:CGRectMake(0, 0, 352, 288)
                          fromRect:self.ciimage.extent];
         
         
         
         // рисуем монстров вместо людей
-        
         for (CIFaceFeature *feature in faces){
             
             if (feature.hasMouthPosition && feature.hasLeftEyePosition && feature.hasRightEyePosition)
@@ -414,7 +427,7 @@
                 
                 CGRect monsterRect = CGRectMake(mOriginX, mOriginY, mWidth, mHeight);
                 
-                NSLog(@"monster rect = (%f, %f, %f, %f)", monsterRect.origin.x, monsterRect.origin.y, monsterRect.size.width, monsterRect.size.height);
+//                NSLog(@"monster rect = (%f, %f, %f, %f)", monsterRect.origin.x, monsterRect.origin.y, monsterRect.size.width, monsterRect.size.height);
 
                 [self.cicontext drawImage:monsterfaceImage1
                                    inRect:monsterRect
@@ -422,11 +435,24 @@
             }
         }
         
+        // draw weapons
+        {
+        int maxInt = 3;
+        int minInt = 0;        
+        int randNum = rand() % (maxInt - minInt) + minInt; //create the random number.
+        CGRect chainsawRect = CGRectMake(200 + randNum, 0, 150, 150);
+        [self.cicontext drawImage:chainsaw
+                           inRect:chainsawRect
+                         fromRect:chainsaw.extent];
+        }
+
+        
         
         newCIImage = [CIImage imageWithTexture:currentDrawingTexture
                                           size:CGSizeMake(TEXTURE_FB_WIDTH, TEXTURE_FB_HEIGH)
                                        flipped:NO
                                     colorSpace:CGColorSpaceCreateDeviceRGB()];
+        
         
     }
     

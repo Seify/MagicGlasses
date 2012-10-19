@@ -32,6 +32,26 @@
 		<data>
 		B7vAkzVYw5ovS/tZs+N8QOQec0w=
 		</data>
+		<key>Textures/Filters/Doom/RedSky.png</key>
+		<data>
+		VP+/qwTCByiu4DXpwr3yZJlVz78=
+		</data>
+		<key>Textures/Filters/Doom/RedSky@2x.png</key>
+		<data>
+		NfIrv88gDIjwlkVH4sDWVTrE22Q=
+		</data>
+		<key>Textures/Filters/Doom/chainsaw.png</key>
+		<data>
+		1Unvu2YI9PgYvfqC2QzSuHfTNug=
+		</data>
+		<key>Textures/Filters/Doom/face_monster_1.png</key>
+		<data>
+		aRX5TU/oIvwkkoWxqdBAtU4iQlM=
+		</data>
+		<key>chainsaw.png</key>
+		<data>
+		hWMgx3j1O5asUhYqKx6ME/VpQ9Q=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		+c0IruBltqJg4t2arg1QFV8YIlo=
@@ -42,19 +62,19 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/2-view-5.nib</key>
 		<data>
-		4khwF+59QZxkQg9gRR5pHIXO2Ww=
+		kh9YY7qwfqPB0aeXZkoRIfppPqk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-2.nib</key>
 		<data>
-		cjL/fKtwMAJzlpwqrCBwzz6+xyM=
+		9n0B1xvs4P9VF6c9kswBkDc+//k=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/2-view-3.nib</key>
 		<data>
-		TSMo1nf+lQteDadMNaajrPHJjek=
+		wV13P0/GUQzj5zox99gd9TtN7cA=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-2.nib</key>
 		<data>
-		LaPplug0z8Px9+A04TGVumX2lmk=
+		tlrjmDRo+71K8YwzgYtGMjWW8Lc=
 		</data>
 		<key>face_monster_1.png</key>
 		<data>
